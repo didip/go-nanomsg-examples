@@ -44,7 +44,7 @@ func main() {
         }
     }()
 
-    // 3. Create Request Client
+    // 3. Create Push Client
     pushSocket, err := push.NewSocket()
     defer pushSocket.Close()
     all.AddTransports(pushSocket)
